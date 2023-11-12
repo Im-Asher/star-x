@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "star-x"
+version = "0.1.0"
+description = ""
+authors = ["asher <asher_github@163.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+torch = "^2.1.0"
+transformers = "^4.35.0"
+datasets = "^2.14.6"
+tqdm = "^4.66.1"
+seqeval = "^1.2.2"
+pytorch-crf = "^0.7.2"
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "default"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
